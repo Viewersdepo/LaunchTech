@@ -13,8 +13,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
-
-.first-nav {
+.first-nav{
     width: 100%;
     height: 8vh;
     background-color: #007bff;
@@ -22,66 +21,60 @@ body {
     color: #fff;
     gap: 10px;
     cursor: pointer;
-
+    
 }
-
-.envelope {
+.envelope{
     margin-left: 6%;
     margin-top: 23px;
     width: 25px;
     height: 30px;
 }
-
-.phonecall {
+.phonecall{
     margin-left: 15px;
     width: 25px;
     height: 35px;
     margin-top: 20px;
 }
-
 .vertical-line {
-    border-left: 1px solid #ffff;
+    border-left: 1px solid #ffff; 
     height: 100px;
     margin-left: 20px;
     margin-top: 0;
-}
-
-nav p {
+ }
+nav p{
     margin-top: 28px;
     font-weight: 600;
     font-size: large;
 }
 
-nav p {
-    transition: opacity 0.5s ease;
+ nav p {
+    transition: opacity 0.5s ease; 
 }
 
 nav p:hover {
-    opacity: 0;
+    opacity: 0; 
 }
 
 nav p:not(:hover) {
-    opacity: 1;
+    opacity: 1; 
 }
-
 section {
-    display: flex;
+    display: flex; 
     gap: 24%;
     margin-top: 50px;
     margin-left: 80px;
 }
 
 .images {
-    width: 120px;
-    /* max-width: ; */
+    width: 120px; 
+    max-width: ;
     margin-left: 20px;
-}
-
-section>p {
+ }
+ section p{
     margin-top: 20px;
     font-size: large;
     font-weight: 600;
-}
+ }
 
 
 header {
@@ -89,7 +82,7 @@ header {
     background-color: #fff;
     text-align: center;
     padding-top: 2.5rem;
-
+    
 }
 
 .logo-container {
@@ -97,7 +90,7 @@ header {
     margin: 0 auto;
     padding: 10px 0;
     z-index: 2;
-    /* margin-top: ; */
+    margin-top: ;
 }
 
 .logo {
@@ -164,7 +157,7 @@ header {
     list-style: none;
     display: flex;
     color: #000;
-
+    
 }
 
 #nav-bar ul li {
@@ -190,7 +183,7 @@ main {
     margin-bottom: 50px;
 }
 
-.container-main {
+    .container-main{
     max-width: 800px;
     background-color: #f5f5f5;
     border: 2px solid #ddd;
@@ -253,7 +246,7 @@ html {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -263,12 +256,11 @@ body {
     min-height: 100vh;
 }
 
-.Footer {
+.Footer{
     background-color: #007bff;
     color: #fff;
-
+    
 }
-
 .footer {
     display: flex;
     gap: 100px;
