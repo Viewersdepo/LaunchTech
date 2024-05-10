@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
+    <link rel="stylesheet" href="../Dashboard/assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#course-track">Course Track</a></li>
+                <li><a href="#opportunities">Opportunities</a></li>
+                <li><a href="#employability-skills">Employability Skills</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="../index.html">Sign Out</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome, [User Name]!</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <p>Photo/avatar</p>
+            <img src="../Dashboard/assets/images/placeholder.jpg" alt="Profile Picture">
+            <h2>Profile</h2>
+            <div class="profile-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li>Name: John Doe</li>
+                    <li>Age: 30</li>
+                    <li>Country: Canada</li>
+                    <li>Address: 123 Main Street, Anytown, CA 12345</li>
+                    <li>Course of Study: Computer Science</li>
+                </ul>
+            </div>
+            <div class="edit-profile">
+                <h3>Edit Profile</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="John Doe">
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" value="30">
+                    <br>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" value="Canada">
+                    <br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address">123 Main Street, Anytown, CA 12345</textarea>
+                    <br>
+                    <label for="course">Course of Study:</label>
+                    <input type="text" id="course" name="course" value="Computer Science">
+                    <br>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </section>
+        <!-- Certification Section -->
+        <section id="certification">
+            <h2>Certification</h2>
+            <p>Track completed courses and earned certificates</p>
+            <p>Option to download or share certificates</p>
+        </section>
+        <!-- Course Track Section -->
+        <section id="course-track">
+            <h2>Course Track</h2>
+            <p>Progress bar for ongoing courses</p>
+            <p>Overview of completed courses and achievements</p>
+        </section>
+        <!-- Opportunities Section -->
+        <section id="opportunities">
+            <h2>Opportunities</h2>
+            <p>Job and internship listings</p>
+            <p>Filter options based on skillset and location</p>
+            <p>Application process details</p>
+        </section>
+        <!-- Employability Skills Section -->
+        <section id="employability-skills">
+            <h2>Employability Skills</h2>
+            <ul>
+                <li><a href="#">CV Writing</a></li>
+                <li><a href="#">LinkedIn Revamp</a></li>
+            </ul>
+            <p>Tips, templates, and guides for crafting effective CVs and LinkedIn profiles</p>
+        </section>
+        <!-- Soft Skills Section -->
+        <section id="softskills">
+            <h2>Soft Skills</h2>
+            <p>Modules</p>
+            <ul>
+                <li><a href="#">Communication</a></li>
+                <li><a href="#">Time management</a></li>
+                <li><a href="#">Problem-solving</a></li>
+                <li><a href="#">Emotional Intelligence</a></li>
+                <li><a href="#">Teamwork</a></li>
+            </ul>
+            <p>Interactive exercises, videos, and resources for skill development</p>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Download valuable materials and access helpful videos to enhance your learning experience.</p>
+            <h3>Software Programming</h3>
+            <ul>
+                <li><a href="#">Python for Beginners E-book</a></li>
+                <li><a href="#">JavaScript Crash Course Video Tutorials</a></li>
+            </ul>
+            <h3>Data Analysis</h3>
+            <ul>
+                <li><a href="#">Excel for Data Analysis Cheat Sheet</a></li>
+                <li><a href="#">Introduction to Data Science with Python Online Course</a></li>
+            </ul>
+            <p>Contribute to the Community!(Optional)</p>
+            <p>Do you have a helpful resource to share? Submit your resource following our <a href="#">guidelines</a>.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

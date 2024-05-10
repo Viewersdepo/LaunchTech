@@ -3,124 +3,225 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
-    <link rel="stylesheet" href="../Dashboard/assets/css/styles.css">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#certification">Certification</a></li>
-                <li><a href="#course-track">Course Track</a></li>
-                <li><a href="#opportunities">Opportunities</a></li>
-                <li><a href="#employability-skills">Employability Skills</a></li>
-                <li><a href="#softskills">Soft Skills</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="../index.html">Sign Out</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome, [User Name]!</h1>
+        <div class="logo" title="University Management System">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <a href="dashboard.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="./Timetable/timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a>
+            <a href="./Exam/exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Certifications</h3>
+            </a>
+            <a href="./Password/password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="../index.html">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+
     </header>
-    <main>
-        <section id="profile">
-            <p>Photo/avatar</p>
-            <img src="../Dashboard/assets/images/placeholder.jpg" alt="Profile Picture">
-            <h2>Profile</h2>
-            <div class="profile-info">
-                <h3>Personal Information</h3>
-                <ul>
-                    <li>Name: John Doe</li>
-                    <li>Age: 30</li>
-                    <li>Country: Canada</li>
-                    <li>Address: 123 Main Street, Anytown, CA 12345</li>
-                    <li>Course of Study: Computer Science</li>
-                </ul>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Sylvia</b> </p>
+                        <small class="text-muted">12102030</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>Software Programming</p>
+                    <h5>DOB</h5>
+                    <p>29-Dec-1992</p>
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>unknown@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia recusandae</p>
+                </div>
             </div>
-            <div class="edit-profile">
-                <h3>Edit Profile</h3>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" value="John Doe">
-                    <br>
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" value="30">
-                    <br>
-                    <label for="country">Country:</label>
-                    <input type="text" id="country" name="country" value="Canada">
-                    <br>
-                    <label for="address">Address:</label>
-                    <textarea id="address" name="address">123 Main Street, Anytown, CA 12345</textarea>
-                    <br>
-                    <label for="course">Course of Study:</label>
-                    <input type="text" id="course" name="course" value="Computer Science">
-                    <br>
-                    <button type="submit">Save Changes</button>
-                </form>
+        </aside>
+
+        <main>
+            <h1>Modules</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span class="material-icons-sharp">architecture</span>
+                    <h3>Responsive Web Design</h3>
+                    <h2>12/14</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>86%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">functions</span>
+                    <h3>JavaScript</h3>
+                    <h2>27/29</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>93%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h3>Data Visualization</h3>
+                    <h2>0/30</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36" opacity="0"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>0%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h3>Back End Development &amp; APIs</h3>
+                    <h2>24/25</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>96%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>Quality Assurance</h3>
+                    <h2>15/27</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>92%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
             </div>
-        </section>
-        <!-- Certification Section -->
-        <section id="certification">
-            <h2>Certification</h2>
-            <p>Track completed courses and earned certificates</p>
-            <p>Option to download or share certificates</p>
-        </section>
-        <!-- Course Track Section -->
-        <section id="course-track">
-            <h2>Course Track</h2>
-            <p>Progress bar for ongoing courses</p>
-            <p>Overview of completed courses and achievements</p>
-        </section>
-        <!-- Opportunities Section -->
-        <section id="opportunities">
-            <h2>Opportunities</h2>
-            <p>Job and internship listings</p>
-            <p>Filter options based on skillset and location</p>
-            <p>Application process details</p>
-        </section>
-        <!-- Employability Skills Section -->
-        <section id="employability-skills">
-            <h2>Employability Skills</h2>
-            <ul>
-                <li><a href="#">CV Writing</a></li>
-                <li><a href="#">LinkedIn Revamp</a></li>
-            </ul>
-            <p>Tips, templates, and guides for crafting effective CVs and LinkedIn profiles</p>
-        </section>
-        <!-- Soft Skills Section -->
-        <section id="softskills">
-            <h2>Soft Skills</h2>
-            <p>Modules</p>
-            <ul>
-                <li><a href="#">Communication</a></li>
-                <li><a href="#">Time management</a></li>
-                <li><a href="#">Problem-solving</a></li>
-                <li><a href="#">Emotional Intelligence</a></li>
-                <li><a href="#">Teamwork</a></li>
-            </ul>
-            <p>Interactive exercises, videos, and resources for skill development</p>
-        </section>
-        <section id="resources">
-            <h2>Resources</h2>
-            <p>Download valuable materials and access helpful videos to enhance your learning experience.</p>
-            <h3>Software Programming</h3>
-            <ul>
-                <li><a href="#">Python for Beginners E-book</a></li>
-                <li><a href="#">JavaScript Crash Course Video Tutorials</a></li>
-            </ul>
-            <h3>Data Analysis</h3>
-            <ul>
-                <li><a href="#">Excel for Data Analysis Cheat Sheet</a></li>
-                <li><a href="#">Introduction to Data Science with Python Online Course</a></li>
-            </ul>
-            <p>Contribute to the Community!(Optional)</p>
-            <p>Do you have a helpful resource to share? Submit your resource following our <a href="#">guidelines</a>.
-            </p>
-        </section>
-    </main>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay">&lt;</span>
+                    <h2>Today's Schedule</h2>
+                    <span id="nextDay">&gt;</span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()">X</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Module</th>
+                            <th>Mode</th>
+                            <!-- <th></th> -->
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Certifications</b>
+                            Track completed courses and earned certificates</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> Global internship &amp; Jop opportunities by Our Partners.</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Employability</b> Tips, templates, and guides for crafting effective CVs and LinkedIn
+                            profiles</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Course Facilitator</h2>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/facilitator.jpeg" alt=""></div>
+                    <div class="info">
+                        <h3>Ayebakuro A. Oruwori</h3>
+                        <small class="text-muted">Software Engineer
+                            <!-- | DevOps Engineer Project Manager | Writer --></small>
+                    </div>
+                </div>
+                <!-- <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/profile-2.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Miracle Iseghohimen</h3>
+                        <small class="text-muted">Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/profile-4.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Olije M. Obande</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div> 
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/JS/timeTable.js"></script>
+    <script src="./assets/JS/app.js"></script>
 </body>
 
 </html>
