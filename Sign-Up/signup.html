@@ -4,43 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Sign-Up/assets/css/styles.css">
+    <link rel="stylesheet" href="../Sign-In/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
     <title>Sign Up</title>
 </head>
 
 <body>
-    <h2>Create Your Account</h2>
-    <section id="signup-form">
-        <form action="#">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="Create a Strong Password">
-            <button type="submit">Sign Up</button>
-        </form>
-    </section>
-    <section id="social-signup">
-        <p>Sign Up with Social Media (Optional):</p>
-        <div class="icons-social">
-            <a href="#" target="_blank">
-                <i class="fab fa-linkedin" aria-hidden="true" id="linkedin-icons"></i>
-                <span class="sr-only">LinkedIn</span>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-google" aria-hidden="true" id="google-icons"></i>
-                <span class="sr-only">Google</span>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-twitter" aria-hidden="true" id="twitter-icons"></i>
-                <span class="sr-only">Twitter</span>
-            </a>
+    <!-- THE Header AND NAVBAER -->
+    <header>
+        <h2 class="logo">Respectech-Hr Academy</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="About Us/about_us.html">Contact</a>
+            <a href="./Contact/contact-us.html">About</a>
+            <a href="Respectechies/techies.html">Respectechies</a>
+            <button class="Sign-In/sign-in.html">Login</button>
+        </nav>
+    </header>
+    <!-- LOGIN BODY -->
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Create Your Account</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><icon-icon name="mail"></icon-icon><icon-icon></icon-icon></span>
+                    <input type="email" name="email" id="email" required>
+                    <label for="full-name">Full Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><icon-icon name="mail"></icon-icon><icon-icon></icon-icon></span>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><icon-icon name="lock-closed"></icon-icon><icon-icon></icon-icon></span>
+                    <input type="password" name="lock-closed" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="ingat">
+                    <label for=""><input type="checkbox">
+                    Save Password
+                    </label>
+                    <a href="#">forget password?</a>
+                </div>
+                <button type="submit" class="btn">Sign UP</button>
+                <div class="login-register">
+                    <p>Log In  <a href="#" class="register-link">Here</a></p>
+                </div>
+            </form>
         </div>
-    </section>
-    <p>Already have an account? <a href="../Sign-In/sign-in.html">Sign In</a></p>
+    </div>
 </body>
 
 </html>
+
+
+<!-- <h2>Create Your Account</h2>
+<section id="signup-form">
+    <form action="#">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Create a Strong Password">
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+<section id="social-signup">
+    <p>Sign Up with Social Media (Optional):</p>
+    <div class="icons-social">
+        <a href="#" target="_blank">
+            <i class="fab fa-linkedin" aria-hidden="true" id="linkedin-icons"></i>
+            <span class="sr-only">LinkedIn</span>
+        </a>
+        <a href="#" target="_blank">
+            <i class="fab fa-google" aria-hidden="true" id="google-icons"></i>
+            <span class="sr-only">Google</span>
+        </a>
+        <a href="#" target="_blank">
+            <i class="fab fa-twitter" aria-hidden="true" id="twitter-icons"></i>
+            <span class="sr-only">Twitter</span>
+        </a>
+    </div>
+</section>
+<p>Already have an account? <a href="../Sign-In/sign-in.html">Sign In</a></p> -->
