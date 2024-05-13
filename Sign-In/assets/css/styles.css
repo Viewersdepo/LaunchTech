@@ -1,4 +1,234 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/Sign-In/images/Campus\ News.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding-inline-start: 0px;
+    margin-block: 0;
+    flex-wrap: wrap;  
+}
+.logo{
+    font-size: 2em;
+    color: rgb(241, 57, 57);
+    user-select: none;
+}
+.navigation a{
+position: relative;
+font-size: 1.1rem;
+color: rgb(160, 37, 37);
+text-decoration: none;
+font-weight: 50%;
+margin-left: 30px;
+}
+.navigation a::after{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom: -4px;
+    width: 100%;
+    background: rgb(15, 10, 10);
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: trasform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup{
+width: 110px;
+height: 40px;
+background: transparent;
+border: 2px solid rgb(252, 75, 75);
+outline: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1em;
+color: white;
+font-weight: 300;
+margin-left: 50px;
+transition: .5s;
+
+}
+
+.navigation .btnlogin-popup:hover{
+    background-color: rgb(252, 75, 75);
+    color: white;
+}
+
+.wrapper{
+position: relative;
+width: 400px;
+height: 440px;
+background: transparent;
+border: 2px solid rgba(252, 75, 75, .5);
+border-radius: 20px;
+backdrop-filter: blur(5px);
+box-shadow: 0 0 30px rgb(0,0,0,.5);
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+/* transform: scale(0); */
+transition: transform .5s, height .2s ease;
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.wrapper.active{
+    height: 520px;
+}
+
+.wrapper.form-box{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .form-box.login{
+    transition: transfrom .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition:none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transform: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transfrom .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 2em;
+    color:rgb(241, 57, 57);
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(160, 37, 37);
+    margin: 30px 0px;
+}
+.input-box label{
+    position: absolute;
+    top: 55%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(241, 57, 57) ;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus-label,
+.input-box input:volid-label{
+    top: -7px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 10px;
+    font-size: 1.8em;
+    color: black;
+    line-height: 60px;
+}
+
+.ingat{
+    font-size: 0.9rem;
+    color: rgb(241, 57, 57);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ingat label input{
+    accent-color: rgb(241, 57, 57);
+    margin-left: 3px;
+}
+
+.ingat a{
+    color: rgb(241, 57, 57);
+    text-decoration: none;
+}
+.ingat a:hover{
+    text-decoration: underline;
+}
+.btn{
+width: 100%;
+height: 45px;
+background: rgb(160, 37, 37);
+border: none;
+outline: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+color: white;
+font-weight: 500;
+}
+
+.login-register{
+    font-size: 0.9em;
+    color: rgb(241, 57, 57);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+/* INITIAL STYLE FOR THE SING IN PAGE */
+ /* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -64,14 +294,13 @@ h2 {
 
 #forgot-password a:hover {
     color: #0056b3;
-}
+} */
 
-/* Media queries for responsive design */
+/* Media queries for responsive design
 @media screen and (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem;
+    .logo{
+        font-size: 1em;
     }
-
     #signin-form {
         padding: 1.5rem;
     }
@@ -103,4 +332,4 @@ h2 {
     #signin-form button {
         padding: 0.2rem 1rem;
     }
-}
+}   */
