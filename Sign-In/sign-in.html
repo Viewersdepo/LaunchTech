@@ -10,58 +10,65 @@
 </head>
 
 <body>
-    <!-- THE Header AND NAVBAER -->
-<header>
-    <h2 class="logo">Respectech-Hr Academy</h2>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="About Us/about_us.html">Contact</a>
-        <a href="./Contact/contact-us.html">About</a>
-        <a href="#">Respectechies</a>
-        <button class="Sign-In\sign-in.html">Login</button>
-    </nav>
-</header>
-<!-- LOGIN BODY -->
-<div class="wrapper">
-    <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon"><icon-icon name="mail"></icon-icon><icon-icon></icon-icon></span>
-                <input type="email" name="email" id="email" required>
-                <label for="email">Email</label>
+    <!-- THE Header AND NAVBAR -->
+    <header>
+        <h2 class="logo">Respectech-Hr Academy</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="About Us/about_us.html">Contact</a>
+            <a href="./Contact/contact-us.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Respectechies
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a class="nav-link" href="Respectechies/techies.html">Cohorts</a>
+                </div>
             </div>
-            <div class="input-box">
-                <span class="icon"><icon-icon name="lock-closed"></icon-icon><icon-icon></icon-icon></span>
-                <input type="password" name="lock-closed" id="password" required>
-                <label for="password">Password</label>
-            </div>
-            <div class="ingat">
-                <label for=""><input type="checkbox">
-                Save Password
-                </label>
-                <a href="#">forget password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="login-register">
-                <p>create new account <a href="#" class="register-link">Here</a></p>
-            </div>
-        </form>
+        </nav>
+    </header>
+    <!-- LOGIN BODY -->
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="../Dashboard/dashboard.html" method="get">
+                <div class="input-box">
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" name="password" required placeholder="Enter Your Password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="ingat">
+                    <label for=""><input type="checkbox">
+                        Save Password
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p class="new">Create a new account <a href="../Sign-Up/signup.html" class="register-link">Here</a>
+                    </p>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
 
 
-<!-- the inital sign up contenet -->
-    <!-- <h2>Welcome Back!</h2>
+<!-- the initial sign up content
+Welcome Back!
     <section id="signin-form">
+        <section>
         <form action="../Student-Dashboard/dashboard.html" method="get">
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter Your Email Address">
+            <input type="email" id="e-mail" name="email" required placeholder="Enter Your Email Address">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="Enter Your Password">
+            <input type="password" id="pass-word" name="password" required placeholder="Enter Your Password">
             <button type="submit">Sign In</button>
         </form>
     </section>

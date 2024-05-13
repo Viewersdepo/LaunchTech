@@ -5,13 +5,14 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
+    z-index: 1001;
 }
 .first-nav{
     width: 100%;

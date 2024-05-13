@@ -4,54 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Sign-In/assets/css/styles.css">
+    <link rel="stylesheet" href="../Sign-Up/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
     <title>Sign Up</title>
 </head>
 
 <body>
-    <!-- THE Header AND NAVBAER -->
+    <!-- THE Header AND NAVBAR -->
     <header>
         <h2 class="logo">Respectech-Hr Academy</h2>
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="About Us/about_us.html">Contact</a>
             <a href="./Contact/contact-us.html">About</a>
-            <a href="Respectechies/techies.html">Respectechies</a>
-            <button class="Sign-In/sign-in.html">Login</button>
+            <div class="dropdown">
+                <button class="dropbtn">Respectechies
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a class="nav-link" href="Respectechies/techies.html">Cohorts</a>
+                </div>
+            </div>
         </nav>
+        <button id="button"><a class="button" href="../Sign-In/sign-in.html">Login</a></button>
     </header>
+
     <!-- LOGIN BODY -->
     <div class="wrapper">
         <div class="form-box login">
             <h2>Create Your Account</h2>
-            <form action="#">
+            <form action="../Sign-In/sign-in.html" method="get">
                 <div class="input-box">
-                    <span class="icon"><icon-icon name="mail"></icon-icon><icon-icon></icon-icon></span>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Full Name">
                     <label for="full-name">Full Name</label>
                 </div>
                 <div class="input-box">
-                    <span class="icon"><icon-icon name="mail"></icon-icon><icon-icon></icon-icon></span>
-                    <input type="email" name="email" id="email" required>
+                    <input type="password" id="pass-word" name="password" required placeholder="john.doe@mail.com">
                     <label for="email">Email</label>
                 </div>
+                <div class="Courses">
+                    <label for="course">Select Course</label>
+                    <div>
+                        <input type="radio" id="cybersecurity" name="course" value="Cybersecurity">
+                        <label for="cybersecurity">Cybersecurity</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="data-analysis" name="course" value="Data Analysis">
+                        <label for="data-analysis">Data Analysis</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="digital-marketing" name="course" value="Digital Marketing">
+                        <label for="digital-marketing">Digital Marketing</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="software-programming" name="course" value="Software Programming">
+                        <label for="software-programming">Software Programming</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ui-ux" name="course" value="UI/UX">
+                        <label for="ui-ux">UI/UX</label>
+                    </div>
+                </div>
                 <div class="input-box">
-                    <span class="icon"><icon-icon name="lock-closed"></icon-icon><icon-icon></icon-icon></span>
-                    <input type="password" name="lock-closed" id="password" required>
+                    <input type="password" id="password" name="password" required placeholder="Enter Your Password">
                     <label for="password">Password</label>
                 </div>
                 <div class="ingat">
                     <label for=""><input type="checkbox">
-                    Save Password
+                        Save Password
                     </label>
-                    <a href="#">forget password?</a>
+                    <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn">Sign UP</button>
-                <div class="login-register">
-                    <p>Log In  <a href="#" class="register-link">Here</a></p>
-                </div>
+                <button type="submit" class="btn">Sign Up</button>
             </form>
         </div>
     </div>

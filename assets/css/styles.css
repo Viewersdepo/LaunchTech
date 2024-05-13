@@ -67,12 +67,12 @@ header {
 
 .navbar {
     overflow: visible;
-    background-color: #fefefe;
+    background-color: #f6f3f3;
     justify-content: flex-end;
     display: flex;
     height: 2em;
     align-items: center;
-    padding-right: 3px;
+    padding-right: 10px;
 }
 
 .navbar a {
@@ -89,6 +89,7 @@ header {
     display: inline-block;
     position: relative;
     z-index: 1001;
+    margin-right: 70px;
 }
 
 .dropdown .dropbtn {
@@ -102,7 +103,7 @@ header {
     margin: 0;
 }
 
-.navbar a:hover,
+.navbar a .nav-link:hover,
 .dropdown:hover .dropbtn {
     background-color: rgb(197, 84, 84);
 }
@@ -132,6 +133,29 @@ header {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#button {
+    position: absolute;
+    top: 1;
+    right: 15px;
+    margin-top: .1px;
+    border: 1px solid rgba(34, 32, 32, 0.21);
+    color: black;
+    border-radius: 20px;
+    padding: .1px .10px;
+    transition: background-color 0.3s ease;
+    z-index: 1001;
+    font-weight: bold;
+}
+
+.button {
+    text-decoration: none;
+    color: #aa8686;
+}
+
+#button a:hover {
+    color: rgb(181, 29, 29);
 }
 
 main {
