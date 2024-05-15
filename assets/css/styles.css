@@ -140,13 +140,15 @@ header {
     top: 1;
     right: 15px;
     margin-top: .1px;
-    border: 1px solid rgba(34, 32, 32, 0.21);
-    color: black;
-    border-radius: 20px;
+    /* border: 1px solid rgba(34, 32, 32, 0.21); */
+    color: rgba(253, 253, 253, 0);
+    /* border-radius: 20px; */
     padding: .1px .10px;
     transition: background-color 0.3s ease;
     z-index: 1001;
     font-weight: bold;
+    opacity: 100%;
+    background-color:#33333300;
 }
 
 .button {
@@ -164,7 +166,7 @@ main {
 }
 
 .main-class {
-    padding-top: 155px;
+    padding-top: 140px;
 }
 
 #intro{
