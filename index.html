@@ -1,123 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>LaunchTech by Respectech-Hr</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/src/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
-    <title>Respectech-Hr Academy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <img src="https://i.ibb.co/RQFbQ87/respectech-logo-2-1.png" alt="Respectech-HR Academy Logo">
-        </div>
+<body class="dark-theme">
+
+    <!-- Navigation bar  -->
+    <header class="navigation">
         <div class="navbar">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="onboarding/onboard.html">Onboard</a>
-            <a class="nav-link" href="About Us/about_us.html">About Us</a>
-            <a class="nav-link" href="./Contact/contact-us.html">Contact Us</a>
-            <div class="dropdown">
-                <button class="dropbtn">Respectechies
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a class="nav-link" href="Respectechies/techies.html">Cohorts</a>
-                </div>
-            </div>
-            <div id="button"><a class="button" href="./Sign-In/sign-in.html">Sign In</a></div>
-        </div>
-        <div class="header-image-container">
-            <img class="header-image" src="https://i.ibb.co/mydxtfR/respectech-3.jpg" alt="Contact Us Image">
-            <div class="header-text">Respectech-HR Academy</div>
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="./Contact/contact-us.html">
+                <span class="material-icons-sharp">connect_without_contact</span>
+                <h3>Contact Us</h3>
+            </a>
+            <a href="./Sign-In/sign-in.html">
+                <span class="material-icons-sharp" onclick="">login</span>
+                <h3>Login</h3>
+            </a>
         </div>
     </header>
-    <main class="main-class">
-        <section id="intro">
-            <p>Respectech-Hr Academy </p>
-        </section>
-        <section id="mission">
-            <h2>Mission and objectives</h2>
-            <p>Our mission is to bridge the unemployment gap in Africa by providing accessible and high-quality tech
-                skill
-                development programs. We believe that everyone deserves the opportunity to build a successful career in
-                the
-                tech field, regardless of background or experience.</p>
-            <ul>
-                <li>Equip learners with in-demand tech skills.</li>
-                <li>Foster a culture of continuous learning and innovation.</li>
-                <li>Connect graduates with internship and job opportunities within our network.</li>
-                <li>Empower individuals to become valuable assets in the global tech workforce.</li>
-            </ul>
-        </section>
-        <section id="skills">
-            <h2>Key Tech skills offered for upskilling</h2>
-            <p>We offer a comprehensive curriculum focused on the most sought-after tech skills in the industry:</p>
-            <ul>
-                <li>Software Programming (Languages like Python, Java, JavaScript)</li>
-                <li>Data Analysis (Data wrangling, visualization, machine learning basics)</li>
-                <li>Digital Marketing (Social media marketing, SEO, content marketing)</li>
-                <li>UI/UX Design (User interface and user experience design principles)</li>
-                <li>Cybersecurity (Essential cybersecurity practices and awareness)</li>
-            </ul>
-        </section>
-        <section id="cta">
-            <h2>Sign up</h2>
-            <p>Don't miss out on this incredible opportunity to take your future to the next level! Sign up today and
-                join
-                our vibrant community of learners and aspiring tech professionals.</p>
-            <a href="Sign-Up\signup.html">Sign Up and Start Your Tech Journey Now!</a>
-        </section>
-        <section id="announcements">
-            <div class="notice-event">
-                <h2 class="heading">Latest Announcements</h2>
-                <div class="marquee-container">
-                    <div class="marquee">
-                        <ul>
-                            <li><img src="assets/images/respectech (4).jpg" alt="day">[Date] - New course: Introduction
-                                to
-                                Cybersecurity!</li>
-                            <li><img src="assets\images\Campus-Day.jpg" alt="Intern">[Date] - Internship opportunities
-                                open
-                                with our partner companies!</li>
-                            <li><img src="assets\images\Campus News.jpg" alt="news">[Date] - Join our upcoming webinar
-                                on career development in tech.</li>
-                        </ul>
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="header-gateway">
+            <h1>LaunchTech</h1>
+            <h6>Your Gateway to <span id="gateway">Tech Success</span></h6>
+        </header>
+
+        <!-- Image header -->
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="../assets/images/Campus News - Copy.jpg" alt="About Us" width="1600"
+                height="1060">
+            <div class="w3-display-left w3-padding-large">
+                <h6 id="resource" class="w3-jumbo w3-text-white w3-hide-small"><b>HUMAN RESOURCE &amp; Talent
+                        Management</b></h6>
+            </div>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row w3-padding w3-border">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>ABOUT US</h3>
+                        <h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="../assets/images/Cohort.jpg" alt="Cohort 2" style="width:100%" class="w3-padding-16">
+                        <p><strong>Respectech-Hr Academy </strong>is a groundbreaking initiative launched by
+                            Respectech-Hr, a
+                            leading human resource
+                            and
+                            talent management company. We are passionate about empowering African youths with the
+                            necessary skills
+                            to
+                            thrive in the ever-evolving tech industry.</p>
+                        <!-- <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')"
+                                id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+                        <p class="w3-clear"></p> -->
+                        <!-- <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                            <hr>
+                            <div class="w3-col l2 m3">
+                                <img src="../assets/images/Orientation.jpg" style="width:90px;">
+                            </div>
+                            <div class="w3-col l10 m9">
+                                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                                <p>Great blog post! Following</p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>Mission &amp; Objectives</h3>
+                        <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="../assets/images/mission.jpg" alt="M-V" style="width:100%" class="w3-padding-16">
+                        <p><strong>Our mission</strong> Tis to bridge the unemployment gap in Africa by providing
+                            accessible and high-quality tech
+                            skill
+                            development programs.</p>
+                        <p>We believe that everyone deserves the opportunity to build a successful career in
+                            the
+                            tech field, regardless of background or experience.</p>
+                        <p class="w3-left"><button class="w3-button w3-white w3-border"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies
+                                     </b> <span class="w3-tag w3-white">2</span></button></p>
+                        <p class="w3-clear"></p>
+
+                        <!-- Example of comment field -->
+                        <div id="demo2" style="display:none">
+                            <div class="w3-row">
+                                <hr>
+                                <div class="w3-col l2 m3">
+                                    <img src="/w3images/girl_train.jpg" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                                    <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p><br>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="/w3images/girl.jpg" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                                    <p>Love hats!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+                        <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!
+                        </p>
+                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl
+                            vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
+                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <p class="w3-left"><button class="w3-button w3-white w3-border"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies
+                                     </b> <span class="w3-tag w3-white">3</span></button></p>
+                        <p class="w3-clear"></p>
+
+                        <!-- Example of comment field -->
+                        <div id="demo3" style="display:none">
+                            <hr>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="/w3images/girl_mountain.jpg" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                                    <p>That was a great runway show! Thanks for everything.</p>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="/w3images/boy.jpg" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="/w3images/girl_hood.jpg" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                                    <p>Cant wait for the runway to start!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END BLOG ENTRIES -->
             </div>
-        </section>
-        <section id="community">
-            <h2>Join the Community</h2>
-            <p>Connect with fellow learners, share experiences, and ask questions in our active online forum!</p>
-            <a href="#">Visit the Community Forum</a>
-        </section>
-        <section id="feedback">
-            <h2 class="improve">Help Us Improve</h2>
-            <p class="feedback">Your feedback is valuable! Share your thoughts and suggestions to help us enhance your
-                learning
-                experience at
-                Respectech-Hr Academy.</p>
-            <form>
-                <label for="feedback-message">Feedback:</label>
-                <textarea id="feedback-message" name="feedback" rows="5"></textarea>
-                <button type="submit">Leave Feedback</button>
-            </form>
-        </section>
-        <section id="faq">
-            <h2>Frequently Asked Questions (FAQ)</h2>
-            <p>Find answers to common questions about our academy and programs.</p>
-            <ul>
-                <li>What are the prerequisites for enrolling in a course?</li>
-                <li>**What are the learning formats offered (online, in-person)?**</li>
-                <li>How much does it cost to participate in the program?</li>
-                <li>Do you offer financial aid or scholarships?</li>
-            </ul>
-            <p>Can't find your question here? <a href="../Contact/contact-us.html">Contact us</a></p>
-        </section>
-    </main>
+
+            <!-- About/Information menu -->
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-white w3-margin">
+                    <img src="./assets/images/Data-Analysis.jpg" alt="Presentation" style="width:100%"
+                        class="w3-grayscale">
+                    <div class="w3-container w3-black">
+                        <h4>Master Tomorrow's Tech Today!</h4>
+                        <p>We offer a comprehensive curriculum focused on the most sought-after tech skills in the
+                            industry:
+                        <ul>
+                            <li>Software Programming (Languages like Python, Java, JavaScript)</li>
+                            <li>Data Analysis (Data wrangling, visualization, machine learning basics)</li>
+                            <li>Digital Marketing (Social media marketing, SEO, content marketing)</li>
+                            <li>UI/UX Design (User interface and user experience design principles)</li>
+                            <li>Cybersecurity (Essential cybersecurity practices and awareness)</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Posts -->
+                <div class="news-container">
+                    <h4>Latest News</h4>
+                    <iframe
+                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7196135270814015490?compact=1"
+                        height="250px" width="contain" frameborder="0" allowfullscreen=""
+                        title="Embedded post"></iframe>
+                    <br>
+                    <span>Respectech Conference!</span>
+                </div>
+                <hr>
+
+                <!-- Advertising -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Advertise</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+                            <span class="w3-display-middle">Your AD Here</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Tags -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>
+                            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span
+                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Inspiration -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Inspiration</h4>
+                    </div>
+                    <div class="w3-row-padding w3-white">
+                        <div class="w3-col s6">
+                            <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
+                            <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
+                        </div>
+                        <div class="w3-col s6">
+                            <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%"
+                                    class="w3-grayscale"></p>
+                            <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Follow Me</h4>
+                    </div>
+                    <div class="w3-container w3-xlarge w3-padding">
+                        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                        <i class="fa fa-instagram w3-hover-opacity"></i>
+                        <i class="fa fa-snapchat w3-hover-opacity"></i>
+                        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                        <i class="fa fa-twitter w3-hover-opacity"></i>
+                        <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Subscribe -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Subscribe</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%">
+                        </p>
+                        <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
+                                class="w3-button w3-block w3-red">Subscribe</button></p>
+                    </div>
+                </div>
+
+                <!-- END About/Intro Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+            <div class="w3-container w3-white">
+                <i onclick="document.getElementById('subscribe').style.display='none'"
+                    class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                <h2 class="w3-wide">SUBSCRIBE</h2>
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-addr">
+            <h1 class="footer-logo">Respectech-Hr</h1>
+            <h2>Contact Us</h2>
+            <address>
+                Respectech Centre, 24 Bambari Cres. Fairtrade Business Complex, Wuse Zone 7, Abuja<br>
+                <a class="footer-btn" href="info-respectech@gmail.com">Email Us</a>
+            </address>
+        </div>
+        <ul class="footer_nav">
+            <li class="nav-item">
+                <h2 class="nav-title">Courses</h2>
+                <ul class="nav-ul nav-ul-extra">
+                    <li>
+                        <a href="#">Software Programming</a>
+                    </li>
+                    <li>
+                        <a href="#">UI/UX</a>
+                    </li>
+                    <li>
+                        <a href="#">Cyber Security</a>
+                    </li>
+                    <li>
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Data Analysis</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <h2 class="nav-title">Legal</h2>
+                <ul class="nav-ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="copyrights">
+            <p>&copy; Respectech-HR Academy. All Rights Reserved.</p>
+            <div class="copyrights-link">
+                Made by RHR Software Programmers C2
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/src/js/script.js"></script>
 </body>
 
 </html>

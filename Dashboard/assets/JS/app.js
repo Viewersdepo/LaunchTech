@@ -49,7 +49,7 @@ let now = new Date();
 let today = now.getDay(); // Will return the present day in numerical value; 
 let day = today; //To prevent the today value from changing;
 
-function timeTableAll(){
+function Employability(){
     document.getElementById('timetable').classList.toggle('active');
     setData(today);
     document.querySelector('.timetable div h2').innerHTML = "Today's Schedule";

@@ -1,7 +1,6 @@
 const Sunday =[
     {   
         time: 'Sunday',
-        roomNumber: 'Holiday',
         Module: 'No class Available',
         mode: ''
     }
