@@ -99,8 +99,41 @@ body {
 
 /* Latest News */
 
+.news-container iframe {
+    display: block;
+    justify-content: center;
+}
 
+/* Follow Us */
+.follow-us {
+    text-decoration: none;
+}
 
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* or specify a fixed height */
+}
+
+#button {
+    display: block;
+    background-color:rgb(193, 45, 45);
+    border: 4px solid rgb(193, 45, 45);
+    border-radius: 70px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    z-index: 1001;
+    color: white;
+    font-weight: bolder;
+}
+
+.button-container a {
+    color: inherit;
+    text-decoration: none;
+}
 /* FOOTER */
 
 
