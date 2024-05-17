@@ -52,22 +52,29 @@ body {
     background-color: #cc546a; 
     padding: 2px 4px;
     border-radius: 4px;
+    color: whitesmoke;
 }
 
 /* Navbar */
+.navigation 
 .navbar {
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
     padding: 0 3rem;
-    color: black;
-    background-color: rgba(220, 20, 60, 0.079);
+    color: rgb(255, 255, 255);
+    background-color: rgba(175, 12, 12, 0.745);
+}
+
+.navbar a h3 {
+    font-size: small;
+    font-weight: bolder;
+    padding-left: .1em;
 }
 
 .navbar a {
     display: flex;
     margin-left: 2em;
-    gap: 1em;
+    /* gap: 1em; */
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -75,7 +82,6 @@ body {
     transition: all 300ms ease;
     padding: 0 1rem;
     text-decoration: none;
-    font-size: 1.1rem;
 }
 
 .navbar a:hover {
