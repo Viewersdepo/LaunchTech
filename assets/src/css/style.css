@@ -115,7 +115,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* or specify a fixed height */
 }
 
 #button {
@@ -134,8 +133,8 @@ body {
     color: inherit;
     text-decoration: none;
 }
-/* FOOTER */
 
+/* FOOTER */
 
 .footer {
     display: flex;
@@ -246,3 +245,118 @@ body {
 ul li {
     list-style: none;
 }
+
+/* media queries */
+
+@media only screen and (min-width: 144px) and (max-width: 3240px) {
+
+    /* Styles for screen sizes between 144px and 3240px */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: calc(1.5rem + 1vw);
+        /* Resize font size based on screen width */
+    }
+
+    body {
+        font-size: calc(1rem + 0.5vw);
+        /* Resize font size based on screen width */
+    }
+
+    #resource {
+        text-shadow: 0 0 calc(25px + 1vw) rgba(13, 13, 34, 2.89);
+        /* Resize text shadow based on screen width */
+    }
+
+    #gateway {
+        background-color: crimson;
+        /* No changes needed */
+    }
+
+    .nav-bar {
+        padding: calc(1em + 0.5vw);
+        /* Resize padding based on screen width */
+    }
+
+    .nav-item {
+        margin-right: calc(1em + 0.5vw);
+        /* Resize margin based on screen width */
+    }
+
+    .nav-right {
+        float: right;
+        /* No changes needed */
+    }
+}
+
+/* header */
+
+@media only screen and (min-width: 144px) and (max-width: 3240px) {
+    .header-gateway {
+        padding: calc(48px * (100vw - 144px) / (3240 - 144));
+        text-align: center;
+    }
+
+    .header-gateway h1 {
+        font-size: calc(48px * (100vw - 144px) / (3240 - 144));
+        font-weight: bold;
+    }
+
+    .header-gateway h6 {
+        font-size: calc(18px * (100vw - 144px) / (3240 - 144));
+    }
+
+    #gateway {
+        padding: calc(2px * (100vw - 144px) / (3240 - 144)) calc(4px * (100vw - 144px) / (3240 - 144));
+        border-radius: calc(4px * (100vw - 144px) / (3240 - 144));
+    }
+}
+
+/* Navbar */
+
+@media only screen and (min-width: 144px) and (max-width: 3240px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 calc(3rem * (100vw - 144px) / (3240 - 144));
+        color: black;
+        background-color: rgba(220, 20, 60, 0.079);
+    }
+
+    .navbar a {
+        display: flex;
+        margin-left: calc(2em * (100vw - 144px) / (3240 - 144));
+        gap: calc(1em * (100vw - 144px) / (3240 - 144));
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: calc(2.5rem * (100vw - 144px) / (3240 - 144));
+        transition: all 300ms ease;
+        padding: 0 calc(1rem * (100vw - 144px) / (3240 - 144));
+        text-decoration: none;
+        font-size: calc(1.1rem * (100vw - 144px) / (3240 - 144));
+    }
+
+    .navbar a:hover {
+        padding-top: calc(1.5rem * (100vw - 144px) / (3240 - 144));
+    }
+
+    .navbar a.active {
+        background: var(--color-light);
+        color: rgb(114, 58, 58);
+    }
+
+    .navbar a.active::before {
+        content: "";
+        background-color: rgb(4, 4, 4);
+        position: absolute;
+        height: calc(3px * (100vw - 144px) / (3240 - 144));
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
