@@ -73,7 +73,6 @@ section {
 
 .images {
     width: 120px;
-    max-width: ;
     margin-left: 20px;
 }
 
@@ -97,7 +96,6 @@ header {
     margin: 0 auto;
     padding: 10px 0;
     z-index: 2;
-    margin-top: ;
 }
 
 .logo {
