@@ -160,6 +160,7 @@ header .navbar {
     justify-content: flex-end;
     padding: 0 3rem;
     color: var(--color-info);
+    overflow-y: hidden;
 }
 
 header .navbar a {
@@ -172,6 +173,7 @@ header .navbar a {
     height: 3.7rem;
     transition: all 300ms ease;
     padding: 0 2rem;
+    overflow-y: hidden;
 }
 
 header .navbar a:hover {
