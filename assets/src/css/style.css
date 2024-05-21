@@ -2,17 +2,21 @@ html {
     font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Oswald";
-}
-
 body {
     font-family: "Open Sans";
     font-size: 1.1em;
 }
 
- /* Landing Page Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald";
+}
 
+/* Landing Page Styling */
 #resource {
     text-shadow: 0 0 25px rgba(13, 13, 34, 2.89);
     color: black;
@@ -24,6 +28,7 @@ body {
     }
 }
 
+/* Navbar */
 .nav-bar {
     background-color: crimson;
     padding: 1em;
@@ -38,30 +43,6 @@ body {
     float: right;
 }
 
-/* Header 1 */
-.header-gateway {
-    background-color: #ffffff; 
-    padding: 48px;
-    text-align: center;
-}
-
-.header-gateway h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.header-gateway h6 {
-    font-size: 18px;
-}
-
-#gateway {
-    background-color: #cc546a; 
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: whitesmoke;
-}
-
-/* Navbar */
 .navigation {
     color: rgb(255, 255, 255);
     background-color: rgba(175, 12, 12, 0.745);
@@ -71,16 +52,12 @@ body {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 3600px) {
-    html {
-        margin: auto;
-    }
 
+    html,
     body {
         margin: auto;
     }
-}
 
-@media only screen and (min-width: 480px) and (max-width: 3600px) {
     .navigation {
         margin: auto;
         height: 2.5em;
@@ -123,7 +100,6 @@ body {
 
 .navbar {
     overflow: hidden;
-    /* background-color: #333; */
     position: relative;
 }
 
@@ -133,18 +109,18 @@ body {
     overflow: hidden;
 }
 
-.navbar a h3 {
-    font-size: large;
-    font-weight: bolder;
-    padding-left: .1em;
-}
-
 .navbar a {
     color: rgb(7, 7, 7);
     padding: 15px 12px;
     text-decoration: none;
     font-size: 14px;
     float: left;
+}
+
+.navbar a h3 {
+    font-size: large;
+    font-weight: bolder;
+    padding-left: .1em;
 }
 
 .navbar a:hover {
@@ -162,8 +138,30 @@ body {
     top: 0;
 }
 
-/* Latest News */
+/* Header 1 */
+.header-gateway {
+    background-color: #ffffff;
+    padding: 48px;
+    text-align: center;
+}
 
+.header-gateway h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-gateway h6 {
+    font-size: 18px;
+}
+
+#gateway {
+    background-color: #cc546a;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+
+/* Latest News */
 .news-container iframe {
     display: block;
     justify-content: center;
@@ -184,7 +182,7 @@ body {
 
 #button {
     display: block;
-    background-color:rgb(193, 45, 45);
+    background-color: rgb(193, 45, 45);
     border: 4px solid rgb(193, 45, 45);
     border-radius: 70px;
     padding: 5px 10px;
@@ -199,8 +197,7 @@ body {
     text-decoration: none;
 }
 
-/* FOOTER */
-
+/* Footer */
 .footer {
     display: flex;
     flex-flow: row wrap;
@@ -216,7 +213,7 @@ body {
 }
 
 .footer-addr {
-    margin-right: 1.2 em;
+    margin-right: 1.2em;
     margin-bottom: 2em;
 }
 
@@ -311,11 +308,9 @@ ul li {
     list-style: none;
 }
 
-/* media queries */
-
+/* Media Queries */
 @media only screen and (min-width: 144px) and (max-width: 3240px) {
 
-    /* Styles for screen sizes between 144px and 3240px */
     h1,
     h2,
     h3,
@@ -329,10 +324,14 @@ ul li {
         font-size: calc(1rem + 0.5vw);
     }
 
-.banner img{
-    width: 100%;
-    position: relative;
-}
+    .banner img {
+        width: 100%;
+        position: relative;
+    }
+
+    .banner-title {
+        padding-left: 5px;
+    }
 
     #resource {
         text-shadow: 0 0 calc(25px + 1vw) rgba(13, 13, 34, 2.89);
@@ -350,15 +349,6 @@ ul li {
         margin-right: calc(1em + 0.5vw);
     }
 
-    .nav-right {
-        float: right;
-    }
-    
-}
-
-/* header */
-
-@media only screen and (min-width: 144px) and (max-width: 3240px) {
     .header-gateway {
         padding: calc(48px * (100vw - 144px) / (3240 - 144));
         text-align: center;
@@ -377,11 +367,7 @@ ul li {
         padding: calc(2px * (100vw - 144px) / (3240 - 144)) calc(4px * (100vw - 144px) / (3240 - 144));
         border-radius: calc(4px * (100vw - 144px) / (3240 - 144));
     }
-}
 
-/* Navbar */
-
-@media only screen and (min-width: 144px) and (max-width: 3240px) {
     .navbar {
         display: flex;
         justify-content: flex-end;
@@ -418,4 +404,3 @@ ul li {
         top: 0;
     }
 }
-

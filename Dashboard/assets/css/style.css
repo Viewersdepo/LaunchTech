@@ -185,7 +185,7 @@ header .navbar a.active {
     color: white;
 }
 
-header .navbar a.active::before {
+header .navbar a.active::after {
     content: "";
     background-color: white;
     position: absolute;
