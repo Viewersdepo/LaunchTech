@@ -688,6 +688,10 @@ main .timetable.active .closeBtn {
     text-align: center;
 }
 
+.employability p {
+    margin-top: 2rem;
+}
+
 .employer-block {
     display: flex;
     justify-content: space-between;
