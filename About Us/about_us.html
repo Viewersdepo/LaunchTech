@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </head>
 
 <body>
@@ -17,19 +21,32 @@
                 <img src="https://i.ibb.co/RQFbQ87/respectech-logo-2-1.png" alt="Respectech-HR Academy Logo">
                 <!-- <h3>Respectech-HR Academy</h3> -->
             </div>
-            <div class="navbar">
-                <a class="nav-link" href="../index.html">Home</a>
-                <!-- <a class="nav-link" href="../onboarding/onboard.html">Onboard</a> -->
-                <a class="nav-link" href="../Contact/contact-us.html">Contact Us</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Respectechies
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a class="nav-link" href="../Respectechies/techies.html">Cohorts</a>
-                    </div>
-                </div>
+        </div>
+    </header>
+    <!-- Navigation bar  -->
+    <header class="navigation">
+        <div class="navbar">
+            <div id="myLinks">
+                <a href="../index.html" class="nav">
+                    <span class="material-icons-sharp md-18">home</span>
+                    Home
+                </a>
+                <!-- <a href="../About Us/about_us.html" class="nav">
+                    <span class="material-icons-sharp">info</span>
+                    About Us
+                </a> -->
+                <a href="../Contact/contact-us.html" class="nav">
+                    <span class="material-icons-sharp">connect_without_contact</span>
+                    Contact Us
+                </a>
+                <a href="../Sign-In/sign-in.html" class="nav">
+                    <span class="material-icons-sharp" onclick="">login</span>
+                    Login
+                </a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -195,6 +212,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
