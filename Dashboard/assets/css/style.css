@@ -185,7 +185,7 @@ header .navbar a.active {
     color: white;
 }
 
-header .navbar a.active::before {
+header .navbar a.active::after {
     content: "";
     background-color: white;
     position: absolute;
@@ -372,7 +372,7 @@ main .subjects small {
     display: block;
 }
 
-main .timetable {
+main .employability {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -381,7 +381,7 @@ main .timetable h2 {
     margin-bottom: .8rem;
 }
 
-main .timetable table {
+main .employability {
     background-color: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
@@ -421,7 +421,7 @@ main .timetable.active {
     justify-content: center;
 }
 
-main .timetable.active h2 {
+main .employability.active h2 {
     color: var(--color-dark);
 }
 
@@ -679,4 +679,45 @@ main .timetable.active .closeBtn {
         width: 100%;
         padding: 2rem;
     }
+}
+
+.employability {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.employability p {
+    margin-top: 2rem;
+}
+
+.employer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.employer-block img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.text-block {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.text-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-block p {
+    font-size: 1rem;
+    margin-bottom: 0;
 }
