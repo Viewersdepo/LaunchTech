@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        
+    </style>
+
 </head>
 
 <body>
@@ -17,7 +23,7 @@
             <img src="../assets/images/logo.png" alt="">
         </div>
         <div class="navbar">
-            <a href="../dashboard.html" class="active">
+            <a href="../dashboard.html"><!--class="active"-->
                 <span class="material-icons-sharp">home</span>
                 <h3>Home</h3>
             </a>
@@ -48,7 +54,7 @@
 
     </header>
 
-    <main style="margin: 0;">
+    <!-- <main style="margin: 0;">
         <div class="timetable active" id="timetable">
             <div>
                 <span id="prevDay">&lt;</span>
@@ -67,11 +73,46 @@
                 <tbody></tbody>
             </table>
         </div>
+    </main> -->
+    <main class="mt-5 pt-3">
+        <div>
+            <div class="d-flex align-items-start" style="width: 100%;">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-briefcase me-2"></i>Jobs</button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-people me-2"></i>Community</button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-buildings me-2"></i> Companies</button>
+                  <!-- <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> -->
+                </div>
+                <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                    
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-7">
+                                <h1>Your Job Search Starts Here</h1>
+                                <h3>Find the role that's right for you.</h3>
+                                <form action="">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                   
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                  <!-- <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div> -->
+                </div>
+              </div>
+        </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../assets/JS/timeTable.js"></script>
+    <script src="../assets/JS/app.js"></script>
+    
 </body>
 
-<script src="../assets/JS/timeTable.js"></script>
-<script src="../assets/JS/app.js"></script>
 
 </html>
