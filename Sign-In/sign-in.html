@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Sign-In/assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <title>Sign In</title>
 </head>
 
 <body>
     <!-- THE Header AND NAVBAR -->
-    <header>
-        <h2 class="logo">Respectech-Hr Academy</h2>
-        <nav class="navigation">
-            <a href="../index.html">Home</a>
-            <a href="../Contact/contact-us.html">Contact</a>
-            <a href="../About Us/about_us.html">About</a>
-            <div class="dropdown">
-                <button class="dropbtn">Respectechies
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a class="nav-link" href="../Respectechies/techies.html">Cohorts</a>
-                </div>
+    <header class="navigation">
+        <div class="navbar">
+            <div id="myLinks">
+                <a href="../index.html" class="nav">
+                    <span class="material-icons-sharp md-18">home</span>
+                    Home
+                </a>
+                <a href="../About Us/about_us.html" class="nav">
+                    <span class="material-icons-sharp">info</span>
+                    About Us
+                </a>
+                <a href="../Contact/contact-us.html" class="nav">
+                    <span class="material-icons-sharp">connect_without_contact</span>
+                    Contact Us
+                </a>
             </div>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <!-- LOGIN BODY -->
     <div class="wrapper">
@@ -54,25 +63,16 @@
             </form>
         </div>
     </div>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
-
-
-<!-- the initial sign up content
-Welcome Back!
-    <section id="signin-form">
-        <section>
-        <form action="../Student-Dashboard/dashboard.html" method="get">
-            <label for="email">Email Address:</label>
-            <input type="email" id="e-mail" name="email" required placeholder="Enter Your Email Address">
-            <label for="password">Password:</label>
-            <input type="password" id="pass-word" name="password" required placeholder="Enter Your Password">
-            <button type="submit">Sign In</button>
-        </form>
-    </section>
-    <section id="forgot-password">
-        <p><a href="#">Forgot Password?</a></p>
-        <p>We'll send you instructions to reset your password.</p>
-    </section>
