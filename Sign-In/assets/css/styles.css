@@ -201,7 +201,7 @@ transition: transform .5s, height .2s ease;
 }
 
 .form-box h2{
-    font-size: 2em;
+    font-size: 3em;
     color:rgb(241, 57, 57);
     text-align: center;
 }
