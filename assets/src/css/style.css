@@ -96,6 +96,7 @@ h6 {
     color: #fff;
     cursor: pointer;
     overflow: hidden;
+    height: auto;
 }
 
 .navbar {
@@ -373,6 +374,7 @@ ul li {
         justify-content: flex-end;
         padding: 0 calc(1.5rem * (100vw - 144px) / (3240 - 144));
         color: black;
+        height: 100%;
     }
 
     .navbar a {
