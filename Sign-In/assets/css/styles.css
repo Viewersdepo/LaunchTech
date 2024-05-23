@@ -220,9 +220,11 @@ transition: transform .5s, height .2s ease;
     transform: translateY(-50%);
     font-size: 1em;
     color: rgb(241, 57, 57) ;
-    font-weight: 500;
+    font-weight: 600;
     pointer-events: none;
     transition: .5s;
+        border: 1px solid rgb(0, 255, 149);
+
 }
 .input-box input:focus-label,
 .input-box input:volid-label{
