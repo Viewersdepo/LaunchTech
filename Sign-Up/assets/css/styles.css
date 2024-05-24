@@ -145,7 +145,7 @@ header {
     color: black;
 }
 
-.navbar a.active::before {
+.navbar a .active::before {
     content: "";
     background-color: rgb(4, 4, 4);
     position: absolute;
@@ -176,15 +176,15 @@ header {
     line-height: 2px;
 }
 
-.wrapper.active-popup {
+.wrapper .active-popup {
     transform: scale(1);
 }
 
-.wrapper.active {
+.wrapper .active {
     height: 520px;
 }
 
-.wrapper.form-box {
+.wrapper .form-box {
     width: 100%;
     padding: 40px;
 }
@@ -210,16 +210,47 @@ header {
     transform: translateX(0);
 }
 
+.form-box h2 {
+    color: rgb(45, 44, 44);
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Country selectiion styling */
+.form-group {
+    margin-bottom: 20px;
+    
+}
+.form-group label {
+    all: initial;
+    color: rgb(241, 57, 57);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: poppins; 
+}
+.form-group select {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.63);
+
+}
+
+
+
+
 .Courses {
     /* font-weight: bolder; */
     text-shadow: 0 0 25px rgba(255, 255, 255, 2.89);
     line-height: 15.5px;
 }
 
-.form-box h2 {
-    color: rgb(45, 44, 44);
-    text-align: center;
-}
 
 #button {
     position: absolute;
