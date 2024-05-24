@@ -23,7 +23,8 @@ body {
     background-position:100%;
     background-position-x: center;
     opacity: 250%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow: hidden;
     
 }
 
