@@ -1,5 +1,7 @@
 /* Thank You Ibrahim, I have checked both pages and made all necessary corrections/adjustments: Jedidiah/
 /* THANK YOU  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -209,7 +211,7 @@ header {
 }
 
 .Courses {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     text-shadow: 0 0 25px rgba(255, 255, 255, 2.89);
     line-height: 15.5px;
 }
@@ -256,7 +258,6 @@ header {
     transform: translateY(-50%);
     font-size: 1em;
     color: rgb(241, 57, 57);
-    font-weight: 500;
     font-weight: bold;
     pointer-events: none;
     transition: .5s;
