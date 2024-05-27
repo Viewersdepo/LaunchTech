@@ -2,3 +2,23 @@ a{
     text-decoration: none;
     color: black;
 }
+.nav-link.active{
+    background-color: brown !important;
+    color: white !important;
+}
+.nav-link.active > i{
+    background-color: brown !important;
+    color: white !important;
+}
+.nav-link:hover{
+    color:brown;
+}
+.nav-link{
+    color: black;
+}
+.nav-link i{
+    color:black;
+}
+.nav-link i:hover{
+    color:brown;
+}
